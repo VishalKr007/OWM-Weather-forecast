@@ -2,7 +2,7 @@ import requests
 
 def weather(city):
     print("Fetching weather data....\n")
-    url = 'http://api.openweathermap.org/data/2.5/weather?q='+ city +'&appid=697ef311d890e8881867fa67b8312407'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q='+ city +'&appid=*****************'
     data = requests.get(url)
     read_data = data.json()
     print('city name: {}'.format(read_data['name']))
